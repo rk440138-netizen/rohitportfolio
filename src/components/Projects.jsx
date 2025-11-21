@@ -6,12 +6,12 @@ export default function Projects() {
   return (
     <section id="projects" className="py-10 bg-[#0a192f] text-gray-100 relative overflow-hidden">
       
-      {/* Background Ambient Glow */}
+      
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-blue-600/20 rounded-full blur-[100px] -z-10"></div>
 
       <div className="container px-4 mx-auto relative z-10">
         
-        {/* ✨ HEADING KO CENTER KARNE KE LIYE WRAPPER ADD KIYA ✨ */}
+        
         <div className="flex justify-center mb-10">
             <Reveal>
             <h3 className="text-4xl md:text-4xl font-bold text-center tracking-tight">
@@ -20,9 +20,9 @@ export default function Projects() {
             </Reveal>
         </div>
 
-        {/* GLASSMORPHISM CARD */}
+        
         <Reveal>
-          {/* ✨ 'ml-15' hata diya taaki card perfectly center ho jaye ✨ */}
+         
           <div className="max-w-xl mx-auto bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-4 text-center shadow-2xl hover:shadow-[#64ffda]/10 transition-all duration-500 group ml-15">
             
             {/* Floating Icon Animation */}
@@ -38,7 +38,7 @@ export default function Projects() {
               </div>
             </div>
 
-            {/* Title */}
+            
             <h4 className="text-3xl font-extrabold mb-4 text-white">
               Projects in <span className="text-transparent bg-clip-text bg-linear-to-r from-[#64ffda] to-[#0077b5]">Development</span>
             </h4>
@@ -48,7 +48,6 @@ export default function Projects() {
               Writing clean code and setting up the architecture.
             </p>
 
-            {/* PROGRESS BAR */}
             <div className="w-full max-w-md mx-auto mb-6">
                 <div className="flex justify-between text-xs font-mono text-[#64ffda] mb-2">
                     <span>Build Status</span>
@@ -65,7 +64,6 @@ export default function Projects() {
                 </div>
             </div>
 
-            {/* Button */}
             <a 
               href="https://github.com/your-id" 
               target="_blank" 

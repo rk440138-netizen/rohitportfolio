@@ -17,12 +17,11 @@ export default function Navbar() {
   return (
     <nav className="fixed w-full h-20 flex justify-between items-center px-6 bg-white shadow-md z-50">
       
-      {/* Logo */}
+    
       <div className="text-3xl font-bold text-[#0b1b45]">
         Rohit
       </div>
 
-      {/* Desktop Menu */}
       <ul className="hidden md:flex gap-8 font-medium text-[#0b1b45]">
         {links.map((link) => (
           <li key={link.id} className="cursor-pointer">
@@ -33,8 +32,7 @@ export default function Navbar() {
               spy={true} 
               exact="true"
               offset={-80} 
-              activeClass="text-[#4726ff] border-b-2 border-[#4726ff]" // Active link par bhi line dikhegi
-              // CHANGE HERE: Added border hover effects
+              activeClass="text-[#4726ff] border-b-2 border-[#4726ff]" fects
               className="hover:text-[#4726ff] border-b-2 border-transparent hover:border-[#4726ff] pb-1 transition duration-300"
             >
               {link.text}
@@ -43,12 +41,11 @@ export default function Navbar() {
         ))}
       </ul>
 
-      {/* Mobile Hamburger Icon */}
       <div onClick={() => setNav(!nav)} className="md:hidden z-10 cursor-pointer text-[#0b1b45]">
         {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
       </div>
 
-      {/* Mobile Menu */}
+      
       {nav && (
         <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-white text-[#0b1b45]">
           {links.map((link) => (

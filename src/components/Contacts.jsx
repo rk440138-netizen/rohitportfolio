@@ -57,7 +57,7 @@ export default function Contact() {
         <div className="bg-white rounded-4xl shadow-2xl overflow-hidden border border-gray-100">
           <div className="flex flex-col md:flex-row">
           
-            {/* LEFT SIDE: Illustration */}
+            
             <div className="w-full md:w-1/2 bg-[#f0f4ff] flex items-center justify-center p-8 relative">
                <div className="absolute w-64 h-64 bg-blue-200/30 rounded-full blur-3xl animate-pulse"></div>
                <Reveal>
@@ -69,12 +69,12 @@ export default function Contact() {
                </Reveal>
             </div>
 
-            {/* RIGHT SIDE: Form */}
+           
             <div className="w-full md:w-1/2 p-8 md:p-10 bg-white relative">
               
               <form onSubmit={onSubmit} className="space-y-6">
                 
-                {/* Name */}
+               
                 <Reveal>
                   <div className="relative group">
                     <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-gray-400 group-focus-within:text-[#4726ff] transition-colors">
@@ -91,7 +91,6 @@ export default function Contact() {
                   </div>
                 </Reveal>
                 
-                {/* Email */}
                 <Reveal>
                   <div className="relative group">
                     <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-gray-400 group-focus-within:text-[#4726ff] transition-colors">
@@ -109,7 +108,7 @@ export default function Contact() {
                   </div>
                 </Reveal>
 
-                {/* Phone */}
+                
                 <Reveal>
                   <div className="relative group">
                     <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-gray-400 group-focus-within:text-[#4726ff] transition-colors">
@@ -125,7 +124,6 @@ export default function Contact() {
                   </div>
                 </Reveal>
 
-                {/* Message */}
                 <Reveal>
                   <div className="relative group">
                      <div className="absolute top-4 left-4 pointer-events-none text-gray-400 group-focus-within:text-[#4726ff] transition-colors">
@@ -143,7 +141,7 @@ export default function Contact() {
                   </div>
                 </Reveal>
 
-                {/* Success/Error Message POPUP (Above Button) */}
+                
                 {result && (
                     <Reveal>
                         <div className={`p-3 rounded-lg text-center font-semibold text-sm ${result.includes("Error") ? "bg-red-100 text-red-600" : "bg-green-100 text-green-600"}`}>
@@ -152,7 +150,7 @@ export default function Contact() {
                     </Reveal>
                 )}
 
-                {/* Submit Button (Fixed Position on Right) */}
+              
                 <Reveal>
                   <div className="flex justify-end"> 
                     <button 

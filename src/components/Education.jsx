@@ -18,10 +18,10 @@ export default function Education() {
 
   return (
     <section id="education" className="py-12 bg-[#e7ecff]">
-      {/* Container se max-w-4xl hata diya taaki hum custom alignment kar sakein */}
+     
       <div className="container mx-auto px-6">
         
-        {/* 1. HEADING: Center Alignment */}
+        
         <Reveal width="100%">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-[#0b1b45] flex items-center justify-center gap-3">
@@ -33,9 +33,6 @@ export default function Education() {
           </div>
         </Reveal>
 
-        {/* 2. CARDS: Left Aligned with Margin */}
-        {/* max-w-2xl: Box ki chaudai kam ki */}
-        {/* md:ml-12: Desktop par left se extra margin diya */}
         <div className="space-y-6 max-w-2xl md:ml-12">
           {educationData.map((edu, index) => (
             <Reveal key={index}>

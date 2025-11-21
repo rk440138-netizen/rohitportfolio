@@ -1,7 +1,7 @@
 import React from "react";
 import profileImage from "../assets/profile3.jpg"; 
 import Reveal from "./Reveal"; 
-import { FaChevronRight, FaUser } from "react-icons/fa"; // FaUser icon import kiya
+import { FaChevronRight, FaUser } from "react-icons/fa";
 import { Tilt } from 'react-tilt';
 
 export default function About() {
@@ -22,14 +22,14 @@ export default function About() {
     <section id="about" className="py-16 bg-[#e7ecff]">
       <div className="container mx-auto px-6">
         
-        {/* ✨ HEADER SECTION: EXACT LIKE PHOTO ✨ */}
+       
         <div className="flex justify-center items-center gap-4 mb-16">
             <Reveal>
-                {/* 1. Black Icon Outside */}
+                
                 <FaUser className="text-black text-4xl" />
             </Reveal>
             <Reveal>
-                {/* 2. Text Inside Blue Box */}
+              
                 <h2 className="text-4xl md:text-4xl font-bold text-black tracking-wide">
                   About Me
                 </h2>
@@ -38,7 +38,7 @@ export default function About() {
 
         <div className="grid md:grid-cols-2 gap-16 items-center max-w-5xl mx-auto">
 
-          {/* LEFT: PHOTO CARD */}
+          
           <Reveal>
             <Tilt options={defaultOptions} className="w-fit mx-auto">
                 <div className="w-[300px] h-[380px] bg-white rounded-[3rem] border-4 border-[#e7ecff] relative overflow-hidden cursor-pointer ">
@@ -51,7 +51,7 @@ export default function About() {
             </Tilt>
           </Reveal>
 
-          {/* RIGHT: TEXT CONTENT */}
+          
           <div className="flex flex-col gap-6 text-left">
             
             <Reveal>

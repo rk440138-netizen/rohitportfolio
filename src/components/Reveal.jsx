@@ -3,7 +3,7 @@ import { motion, useInView, useAnimation } from "framer-motion";
 
 export default function Reveal({ children, width = "fit-content" }) {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true }); // Animates only once when seen
+  const isInView = useInView(ref, { once: true }); 
   const mainControls = useAnimation();
 
   useEffect(() => {

@@ -6,7 +6,7 @@ import { VscVscode } from 'react-icons/vsc';
 
 export default function Skills() {
   
-  // 1. Core Tech Stack
+  
   const skills = [
     { icon: <FaHtml5 size={50} color="#E34F26" />, name: 'HTML5' },
     { icon: <FaCss3Alt size={50} color="#1572B6" />, name: 'CSS3' },
@@ -16,10 +16,9 @@ export default function Skills() {
     { icon: <FaReact size={50} color="#61DAFB" />, name: 'ReactJS' },
   ];
 
-  // 2. Tools (Node.js Removed)
 
     const tools = [
-    // 2. Use the new VscVscode icon here
+
     { icon: <VscVscode size={50} color="#007ACC" />, name: 'VS Code' },
     { icon: <FaGithub size={50} color="#ffffff" />, name: 'GitHub' },
     { icon: <FaGitAlt size={50} color="#F05032" />, name: 'Git' },
@@ -31,7 +30,7 @@ export default function Skills() {
     <section id="skills" className="py-15 bg-linear-to-b from-[#420eaa] to-[#8e2de2] text-white">
       <div className="container mx-auto px-6 max-w-6xl">
         
-        {/* ================= 1. TECH STACK SECTION ================= */}
+      
         <Reveal width="100%">
           <div className="flex items-center justify-center gap-3 mb-12">
              <div className="bg-white text-[#4a00e0] p-2 rounded">
@@ -41,10 +40,7 @@ export default function Skills() {
           </div>
         </Reveal>
         
-        {/* CHANGE: lg:grid-cols-6 kar diya hai.
-           Isse Desktop par saare 6 items EK ROW mein aayenge.
-           gap-5: Thoda spacing rakha hai taaki chipke na.
-        */}
+        
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-5 mb-24">
           {skills.map((item, index) => (
             <Reveal key={index}>
@@ -59,7 +55,6 @@ export default function Skills() {
         </div>
 
 
-        {/* ================= 2. TOOLS SECTION ================= */}
         <Reveal width="100%">
           <div className="flex items-center justify-center gap-3 mb-12">
              <div className="bg-white text-[#4a00e0] p-2 rounded">
@@ -69,7 +64,6 @@ export default function Skills() {
           </div>
         </Reveal>
 
-        {/* Grid adjust kiya hai taaki center mein dikhe */}
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 text-center justify-center">
           {tools.map((item, index) => (
             <Reveal key={index}>

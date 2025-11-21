@@ -12,13 +12,13 @@ export default function Footer() {
   ];
 
   return (
-    // 1. Height Reduced: py-16 -> py-10
+    
     <footer className="bg-[#000024] text-gray-300 py-10 relative z-10">
       
-      {/* 2. Right & Left Margins Increased: px-10 (mobile) and md:px-32 (desktop) */}
+      
       <div className="container mx-auto px-10 md:px-32 grid grid-cols-1 md:grid-cols-3 gap-10">
         
-        {/* Column 1: Portfolio Info */}
+       
         <Reveal>
           <div>
             <h3 className="text-2xl font-bold text-white mb-4">Rohit's Portfolio</h3>
@@ -40,7 +40,6 @@ export default function Footer() {
           </div>
         </Reveal>
 
-        {/* Column 2: Quick Links */}
         <Reveal>
           <div>
             <h3 className="text-xl font-bold text-white mb-4">Quick Links</h3>
@@ -62,7 +61,7 @@ export default function Footer() {
           </div>
         </Reveal>
 
-        {/* Column 3: Contact Info */}
+        
         <Reveal>
           <div>
             <h3 className="text-xl font-bold text-white mb-4">Contact Info</h3>
