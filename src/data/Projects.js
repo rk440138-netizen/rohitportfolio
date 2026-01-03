@@ -13,7 +13,7 @@ const projects = [
     
     tech: ["React", "API", "CSS"],
   },
-  // add more projects
+  
 ];
 
 export default projects;

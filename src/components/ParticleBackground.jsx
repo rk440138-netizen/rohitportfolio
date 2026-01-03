@@ -21,7 +21,7 @@ export default function ParticleBackground() {
         options={{
           fullScreen: { enable: false },
           background: { color: { value: "transparent" } },
-          fpsLimit: 120,
+          fpsLimit: 80  ,
           interactivity: {
             events: {
               onHover: { enable: true, mode: "grab" },
@@ -39,8 +39,8 @@ export default function ParticleBackground() {
               opacity: 0.5,
               width: 1,
             },
-            move: { enable: true, speed: 1.5 },
-            number: { value: 80 },
+            move: { enable: true, speed: 1 },
+            number: { value: 70 },
             opacity: { value: 0.5 },
             shape: { type: "circle" },
             size: { value: { min: 1, max: 3 } },

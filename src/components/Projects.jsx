@@ -4,28 +4,24 @@ import { FaLaptopCode, FaGithub, FaHammer } from "react-icons/fa";
 
 export default function Projects() {
   return (
-    <section id="projects" className="py-10 bg-[#0a192f] text-gray-100 relative overflow-hidden">
-      
+    <section id="projects" className="py-20 bg-[#0a192f] text-gray-100 relative overflow-hidden">
       
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-blue-600/20 rounded-full blur-[100px] -z-10"></div>
 
-      <div className="container px-4 mx-auto relative z-10">
+      <div className="container px-6 mx-auto relative z-10 max-w-6xl">
         
-        
-        <div className="flex justify-center mb-10">
+        <div className="flex justify-center mb-16">
             <Reveal>
-            <h3 className="text-4xl md:text-4xl font-bold text-center tracking-tight">
+            <h3 className="text-4xl md:text-5xl font-bold text-center tracking-tight">
                 Featured <span className="text-[#64ffda]">Projects</span>
             </h3>
             </Reveal>
         </div>
 
-        
         <Reveal>
          
-          <div className="max-w-xl mx-auto bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-4 text-center shadow-2xl hover:shadow-[#64ffda]/10 transition-all duration-500 group ml-15">
+          <div className="max-w-xl mx-auto bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-8 text-center shadow-2xl hover:shadow-[#64ffda]/10 transition-all duration-500 group">
             
-            {/* Floating Icon Animation */}
             <div className="flex justify-center mb-8">
               <div className="relative">
                 <div className="absolute inset-0 bg-[#64ffda] blur-xl opacity-20 rounded-full animate-pulse"></div>
@@ -37,25 +33,25 @@ export default function Projects() {
                 </div>
               </div>
             </div>
-
             
             <h4 className="text-3xl font-extrabold mb-4 text-white">
               Projects in <span className="text-transparent bg-clip-text bg-linear-to-r from-[#64ffda] to-[#0077b5]">Development</span>
             </h4>
             
-            <p className="text-gray-400 text-lg mb-6 leading-relaxed max-w-xl mx-auto">
-              I'm currently building some <br /> high-quality <strong>Full-Stack & Frontend</strong> applications. <br /> 
+            <p className="text-gray-400 text-lg mb-6 leading-relaxed">
+              I'm currently building some high-quality <strong>Full-Stack & Frontend</strong> applications. 
               Writing clean code and setting up the architecture.
             </p>
 
-            <div className="w-full max-w-md mx-auto mb-6">
+            <div className="w-full max-w-md mx-auto mb-8">
                 <div className="flex justify-between text-xs font-mono text-[#64ffda] mb-2">
                     <span>Build Status</span>
                     <span>45%</span>
                 </div>
                 <div className="w-full h-3 bg-gray-700 rounded-full overflow-hidden">
                     <div className="h-full bg-linear-to-r from-[#0077b5] to-[#64ffda] w-[45%] rounded-full shadow-[0_0_10px_#64ffda] relative overflow-hidden">
-                        <div className="absolute top-0 left-0 w-full h-full bg-white/20 -translate-x-full animate-[shimmer_2s_infinite]"></div>
+                        
+                        <div className="absolute top-0 left-0 w-full h-full bg-white/20"></div>
                     </div>
                 </div>
                 <div className="text-xs text-gray-500 mt-2 font-mono text-left">
@@ -64,21 +60,9 @@ export default function Projects() {
                 </div>
             </div>
 
-            <a 
-              href="https://github.com/your-id" 
-              target="_blank" 
-              rel="noreferrer"
-              className="
-                inline-flex items-center gap-3 px-8 py-4 
-                bg-[#112240] border border-[#64ffda] text-[#64ffda] font-bold rounded-full 
-                shadow-[0_0_15px_rgba(100,255,218,0.1)]
-                hover:bg-[#64ffda] hover:text-[#0a192f] hover:shadow-[0_0_25px_rgba(100,255,218,0.6)]
-                transition-all duration-300 transform hover:scale-105
-              "
-            >
+            <a href="https://github.com/rk440138-netizen" target="_blank" rel="noreferrer" className="inline-flex items-center gap-3 px-8 py-3 bg-[#112240] border border-[#64ffda] text-[#64ffda] font-bold rounded-full shadow-[0_0_15px_rgba(100,255,218,0.1)] hover:bg-[#64ffda] hover:text-[#0a192f] transition-all duration-300 transform hover:scale-105">
               <FaGithub size={22} /> Check Code on GitHub
             </a>
-
           </div>
         </Reveal>
 
